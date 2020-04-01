@@ -1,0 +1,41 @@
+  133  sudo apt-get install git
+  134  git --version
+  135  git config --global kanbagi
+  136  git config --global user.name "Kanbani.Annas"
+  137  git config --global user.email "Kanbani.Annas@gmail.com" 
+  138  git config --list
+  144  git --init 
+  145  git --init .
+  146  git init 
+  151  git add .
+  152  git commit -m "initial steps to install selenoid"
+  153  git remote add https://github.com/Kanbagi/command-lets
+  154  git remote add "https://github.com/Kanbagi/command-lets"
+  155  git remote add origin  "https://github.com/Kanbagi/command-lets"
+  156  git push -u origin master
+  158  git push -u origin master
+  159  git config -global http.proxy "http://descproxy01.brainlab.net:8080"
+  160  git config --global http.proxy "http://descproxy01.brainlab.net:8080"
+  161  git push -u origin master
+  162  git pull 
+  163  git pull command-lets master
+  164* git pull --hel
+  165  git pull master
+  166  git pull
+  167  git pull command-lets master
+  168  git status
+  169  git pull command-lets master
+  175  git init 
+  176  git pull command-lets master
+  177  git clone https://github.com/Kanbagi/command-lets.git
+  184  git status
+  185  git add .
+  186  git status
+  187  git push origing master 
+  188  git push origin master 
+  189  git status
+  190  git commit
+  191  git status
+  192  git push
+  194  history | grep git 
+  195  history | grep git  >> allgitCMDs.txt 

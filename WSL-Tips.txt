@@ -1,0 +1,97 @@
+https://www.hanselman.com/blog/RubyOnRailsOnWindowsIsNotJustPossibleItsFabulousUsingWSL2AndVSCode.aspx
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+wsl --list -v
+wsl --set-version "Ubuntu-18.04" 2
+
+#enable proxy
+Acquire::http::Proxy "descproxy01.brainlab.net:8080";
+#with exceptions ??
+$proxyExceptions = "support.brainlab.com;*.brainlabdev.net;*.brainlabdemo.net;*.brainlab.net;10.*;localhost;127.0.0.1;"
+
+
+#see https://www.thomasmaurer.ch/2020/03/whats-new-in-powershell-7-check-it-out/
+PS7
+Null assignment and coalescing operators (?? and ??=)
+
+
+see: https://aerokube.com/cm/latest/
+HTTP_PROXY=http://descproxy01.brainlab.net:8080 ./cm selenoid start
+HTTP_PROXY=http://descproxy01.brainlab.net:8080 ./cm selenoid start
+
+more bash | bash && HTTP_PROXY=http://descproxy01.brainlab.net:8080 ./cm selenoid start --vnc
+more bash | bash && HTTPS_PROXY=https://descproxy01.brainlab.net:8080 ./cm selenoid start --vnc
+
+
+see: 
+https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
+
+#installing selenoid
+curl -s https://aerokube.com/cm/bash | bash && sudo ./cm selenoid start --vnc
+
+curl -s https://aerokube.com/cm/bash | bash && ./cm selenoid start --vnc
+
+
+http://descproxy01.brainlab.net
+
+curl -s https://aerokube.com/cm/bash | bash && ./cm selenoid-ui start
+
+# docer service must be started from within an administrator wsl
+
+# there need to be a http_proxy variable seting in the WSL
+
+# in to be a http_proxy variable seting in the WSL
+========================================================
+stored docker cmds
+   90  docker pull selenoid/vnc:firefox_57.0
+   92  pip install --user docker-compose
+   97  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  106  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+  108  apt-cache policy docker-ce
+  111  sudo apt install docker-ce
+  112  sudo systemctl status docker
+  113  sudo apt install docker-ce
+  115  sudo systemctl status docker
+  116  docker 
+  149  touch docker.txt 
+  150  vim docker.txt 
+  181  touch docker.txt 
+  182  vim docker.txt 
+  264  docker 
+  265  docker ls
+  266  docker container ls 
+  267  docker info 
+  269  sudo service docker start
+  270  docker info 
+  271  sudo docker info 
+  273  sudo service docker start
+  274  sudo docker info 
+  275  docker run --rm hello-world
+  281  service docker start
+  282  docker info
+  283  sudo docker info
+  284  sudo service docker start
+  285  sudo docker info
+  287  sudo docker run --rm hello-world
+  291  sudo docker info
+  305  ping https://registry.hub.docker.com/v2/
+  306  ping https://registry.hub.docker.com
+  308  ping docker.com
+  309  sudo docker run --rm hello-world
+  310  ls /etc/default/docker 
+  311  vim /etc/default/docker 
+  312  sudo docker run --rm hello-world
+  313  sudo service docker stop
+  314  sudo service docker start 
+  315  sudo docker run --rm hello-world
+  316  sudo service docker stop
+  317  vim /etc/default/docker 
+  318  sudo service docker start
+  319  sudo docker run --rm hello-world
+  320  sudo service docker stop
+  321  vim /etc/default/docker 
+  322  sudo docker run --rm hello-world
+  323  sudo service docker start
+  324  sudo docker run --rm hello-world
+  328  history | grep docker >> dockerCmd.txt
+=========================================================
