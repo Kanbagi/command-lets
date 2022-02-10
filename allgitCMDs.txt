@@ -2,7 +2,7 @@
   134  git --version
   135  git config --global kanbagi
   136  git config --global user.name "Kanbani.Annas"
-  137  git config --global user.email "Kanbani.Annas@gmail.com" 
+  137  git config --global user.email "Kanbani.Annas@gm" 
   138  git config --list
   144  git --init 
   145  git --init .
@@ -14,8 +14,8 @@
   155  git remote add origin  "https://github.com/Kanbagi/command-lets"
   156  git push -u origin master
   158  git push -u origin master
-  159  git config -global http.proxy "http://descproxy01.brainlab.net:8080"
-  160  git config --global http.proxy "http://descproxy01.brainlab.net:8080"
+  159  git config -global http.proxy "setyourproxynamehere"
+  160  git config --global http.proxy "setyourproxynamehere"
   161  git push -u origin master
   162  git pull 
   163  git pull command-lets master
